@@ -7,5 +7,8 @@ public class DemoApp {
 
         System.out.println(card);
 
+        Card[] array = new Card[8];
+        CardStack cardStack = new CardStack(array);
+
     }
 }
