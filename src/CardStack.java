@@ -9,13 +9,24 @@ public class CardStack {
     }
 
     public void push(Card newElement) {
-        counter++;
-        cards[counter] = newElement;
+        // cards.length == 2
+        if (cards.length > counter + 1) {
+            counter++;
+            cards[counter] = newElement;
+        }
+        else {
+            System.out.println("Stack ist voll: " + newElement);
+        }
     }
 
     public Card pop(){
-        Card result = cards[counter];
-        counter--;
-        return result;
+        if (counter >= 0) {
+            Card result = cards[counter];
+            counter--;
+            return result;
+        } else {
+            System.out.println("Stack ist bereits leer");
+            return null;
+        }
     }
 }

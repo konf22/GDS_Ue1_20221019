@@ -7,7 +7,7 @@ public class DemoApp {
 
         System.out.println(card);
 
-        Card[] array = new Card[8];
+        Card[] array = new Card[2];
         CardStack cardStack = new CardStack(array);
 
         cardStack.push(new Card(3 , "yellow"));
