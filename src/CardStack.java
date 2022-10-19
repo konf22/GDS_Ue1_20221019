@@ -12,4 +12,10 @@ public class CardStack {
         counter++;
         cards[counter] = newElement;
     }
+
+    public Card pop(){
+        Card result = cards[counter];
+        counter--;
+        return result;
+    }
 }
