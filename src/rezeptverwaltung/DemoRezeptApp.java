@@ -10,7 +10,7 @@ public class DemoRezeptApp {
         Zutat butter = new Zutat("Butter", 250);
         Zutat zucker = new Zutat("Zucker", 250);
 
-        Zutat omasGeheimZutat = new Zutat();
+        Zutat omasGeheimZutat = new Zutat("Feenstaub", 100);
 
         /// ...
 
@@ -18,7 +18,6 @@ public class DemoRezeptApp {
 
         System.out.println(butter.toString());
         System.out.println(omasGeheimZutat.toString());
-        omasGeheimZutat.initialize("Feenstaub", 100);
         System.out.println(omasGeheimZutat.toString());
 
         Zutat mehl = new Zutat("Mehl 480 universal", 250);

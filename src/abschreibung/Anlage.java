@@ -26,8 +26,7 @@ public class Anlage {
 	public void abschreiben()
 	{
 		alter++;
-		if (alter <= nutzungsdauer)
-		{
+		if (alter <= nutzungsdauer) {
 			restWert = Math.floor(initalWert / nutzungsdauer 
 					* (nutzungsdauer - alter));
 		}
@@ -36,9 +35,7 @@ public class Anlage {
 	public void simulate(int maxJahre, int minWert)
 	{
 		int counter = 1;
-		while (counter <= maxJahre && restWert 
-				> minWert)
-		{
+		while (counter <= maxJahre && restWert > minWert) {
 			System.out.println("Vorher > Jahr " + counter + " " + toString());
 			abschreiben();		
 			System.out.println("Nachher > Jahr " + counter + " " + toString());
@@ -48,15 +45,12 @@ public class Anlage {
 	
 	public void simulate2(int maxJahre, int minWert)
 	{
-		for (int i = 0; i <= maxJahre; i++)
-		{
+		for (int i = 0; i <= maxJahre; i++) {
 			System.out.println("Vorher > Jahr " + i + " " + toString());
 			abschreiben();		
 			System.out.println("Nachher > Jahr " + i + " " + toString());
 		
-			if (restWert < minWert 
-					|| restWert == 0)
-			{
+			if (restWert < minWert || restWert == 0) {
 				break;
 			}
 		}

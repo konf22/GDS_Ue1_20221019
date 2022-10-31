@@ -22,16 +22,6 @@ public class Zutat {
         this.menge = menge;
     }
 
-    public Zutat(){ // Dieser Konstruktor wurde überladen. Überladen bedeutet, gleicher Name, unterschiedliche Parameter
-        this.name = "noch nicht definiert";
-        this.menge = -1;
-    }
-
-    public void initialize(String name, int menge){
-        this.name = name;
-        this.menge = menge;
-    }
-
     // Methode:
     // Ändert den inneren Zustand der Klasse
     // access_modifier (static) return_type methodName(parameters 0...n)
