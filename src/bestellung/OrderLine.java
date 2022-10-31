@@ -1,3 +1,5 @@
+package bestellung;
+
 public class OrderLine {
     private String name;
     private double price;
@@ -15,7 +17,7 @@ public class OrderLine {
 
     @Override
     public String toString() {
-        return "OrderLine{" +
+        return "bestellung.OrderLine{" +
                 "name='" + name + '\'' +
                 ", price=" + price +
                 ", amount=" + amount +

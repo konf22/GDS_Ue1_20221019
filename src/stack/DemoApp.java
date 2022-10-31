@@ -1,3 +1,5 @@
+package stack;
+
 public class DemoApp {
     public static void main(String[] args) {
         System.out.println("Hello World");
@@ -30,6 +32,6 @@ public class DemoApp {
         System.out.println("c3 = " + c3);
         Card c4 = cardStack.pop();
         System.out.println("c4 = " + c4);
-        //Card c5 = cardStack.pop();
+        //Stack.Card c5 = cardStack.pop();
     }
 }

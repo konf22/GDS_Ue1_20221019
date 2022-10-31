@@ -1,3 +1,5 @@
+package stack;
+
 public class CardStack {
     private Card[] cards;
     private int counter;

@@ -1,3 +1,5 @@
+package bestellung;
+
 public class Order {
     private String number;
     private OrderLine[] arrayOfOrderLines;
@@ -8,7 +10,7 @@ public class Order {
     }
 
     public void printOrder() {
-        System.out.println("Order has " + arrayOfOrderLines.length + " lines:");
+        System.out.println("bestellung.Order has " + arrayOfOrderLines.length + " lines:");
         for (int i = 0; i < arrayOfOrderLines.length; i++) {
             System.out.println(arrayOfOrderLines[i].toString());
         }

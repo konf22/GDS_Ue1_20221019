@@ -1,3 +1,5 @@
+package stack;
+
 public class Card {
     private int value;
     private String colour;
@@ -27,7 +29,7 @@ public class Card {
     }
 
     public String toString() {
-        return "Card x{" +
+        return "Stack.Card x{" +
                 "value=" + value +
                 ", colour='" + colour + '\'' +
                 '}';
